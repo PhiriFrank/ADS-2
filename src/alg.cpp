@@ -2,7 +2,6 @@
 #include <cstdint>
 #include "alg.h"
 #include <iostream>
-
 double pown(double value, uint16_t n) {
     if (n == 0) {
         return 1;
@@ -43,9 +42,8 @@ double cosn(double x, uint16_t count) {
     for (uint64_t i = 2; i <= count; i++) {
         result += pown(-1, i - 1) * calcItem(x, 2 * i - 2);
     }
-    return result;
+   return result;
 }
-
 int main()
 {
     std::cout <<calcItem(1,5);
